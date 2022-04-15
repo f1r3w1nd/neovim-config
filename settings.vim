@@ -10,7 +10,7 @@
 :set termguicolors
 :set encoding=UTF-8
 :set completeopt-=preview
-:colorscheme onedark
+:colorscheme materialbox
 
 let g:enable_bold_font=1
 let g:enable_italic_font=1
