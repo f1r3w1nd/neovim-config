@@ -25,5 +25,7 @@ let g:coc_global_extensions = [
 	\ 'coc-svelte',
 	\ 'coc-svg',
 	\ 'coc-swagger',
-	\ 'coc-tailwindcss'
+	\ 'coc-tailwindcss',
+	\ 'coc-jest',
+	\ 'coc-explorer'
 	\]

@@ -12,7 +12,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'mattn/emmet-vim'
 Plug 'kyazdani42/nvim-web-devicons'
-Plug 'kyazdani42/nvim-tree.lua'
+" Plug 'kyazdani42/nvim-tree.lua' replaced with coc-explorer
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'google/vim-maktaba'
 Plug 'bazelbuild/vim-bazel'
@@ -23,6 +23,5 @@ Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'junegunn/gv.vim'
-Plug 'romgrk/barbar.nvim'
 
 call plug#end()
