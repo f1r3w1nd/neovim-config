@@ -23,6 +23,10 @@
   "explorer.keyMappings": {
     "<cr>": ["expandable?", "expand", "open"],
     "v": "open:vsplit"
-  } 
+  },
+    "explorer.file.hiddenRules": {
+		"filenames": ["node_modules", ".git", ".DS_STORE"]
+  },
+  "explorer.file.showHiddenFiles": false
 }
 

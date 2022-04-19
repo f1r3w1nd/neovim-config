@@ -6,7 +6,7 @@
 :set softtabstop=4
 :set mouse=a
 :set background=dark
-:set guifont=JetBrainsMono\ Nerd\ Font:h14
+:set guifont=Noto\ Mono:h12
 :set termguicolors
 :set encoding=UTF-8
 :set completeopt-=preview
@@ -30,4 +30,7 @@ let g:airline_right_alt_sep = ''
 let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
+
+let g:netrw_list_hide= '.*\.swp$, *\.pyc, *\.DS_STORE, node_modules, *\.git'
+let g:netrw_hide=1
 
