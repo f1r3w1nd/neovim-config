@@ -34,3 +34,5 @@ let g:airline_symbols.linenr = ''
 let g:netrw_list_hide= '.*\.swp$, *\.pyc, *\.DS_STORE, node_modules, *\.git'
 let g:netrw_hide=1
 
+set autochdir
+
