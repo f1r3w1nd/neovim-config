@@ -1,9 +1,9 @@
 :set number
 :set mouse=a
-:set guifont=NotoMono\ Nerd\ Font:h12
+:set guifont=FiraCode\ Nerd\ Font:h13.5
 :set encoding=UTF-8
 :set completeopt-=preview
-:colorscheme OceanicNext
+:colorscheme nightfox
 
 if match($TERM, "screen") != -1
   set term=xterm-256color
@@ -51,3 +51,4 @@ au FileType plantuml let g:plantuml_previewer#plantuml_jar_path = get(
 
 let g:NERDTreeHijackNetrw = 0
 let g:ranger_replace_netrw = 1
+

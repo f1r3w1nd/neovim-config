@@ -2,7 +2,6 @@ let g:coc_global_extensions = [
 	\ 'coc-python',
 	\ 'coc-java',
 	\ 'coc-tsserver',
-	\ 'coc-scala',
 	\ 'coc-json',
 	\ 'coc-html-css-support',
 	\ 'coc-css',
@@ -27,5 +26,6 @@ let g:coc_global_extensions = [
 	\ 'coc-swagger',
 	\ 'coc-tailwindcss',
 	\ 'coc-jest',
-	\ 'coc-explorer'
+	\ 'coc-explorer',
+  \ 'coc-webview'
 	\]

@@ -6,6 +6,8 @@
   "tslint.enable": true,
   "tslint.autoFixOnSave": true,
 
+  "eslint.autoFixOnSave": true,
+
   // Run prettier (and others)
   "coc.preferences.formatOnSaveFiletypes": [
     "css",
@@ -14,7 +16,11 @@
     "javascript",
     "javascriptreact",
     "typescript",
-    "typescriptreact"
+    "typescriptreact",
+    "java",
+    "scala",
+    "yaml",
+    "json"
   ],
 
   "explorer.width": 30,
@@ -27,6 +33,11 @@
     "explorer.file.hiddenRules": {
 		"filenames": ["node_modules", ".git", ".DS_STORE"]
   },
-  "explorer.file.showHiddenFiles": false
+  "explorer.file.showHiddenFiles": false,
+
+  "java.configuration.runtimes": [
+    { "name": "JavaSE-13", "path": "/Library/Java/JavaVirtualMachines/jdk-13.0.2.jdk/Contents/Home", "default": true }
+  ],
+  "markdown-preview-enhanced.breakOnSingleNewLine": true
 }
 
