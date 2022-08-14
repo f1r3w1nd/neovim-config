@@ -29,7 +29,8 @@ Plug 'weirongxu/plantuml-previewer.vim'
 Plug 'tyru/open-browser.vim',
 Plug 'nvim-lua/plenary.nvim'
 Plug 'scalameta/nvim-metals'
-
+Plug 'liuchengxu/vista.vim'
+Plug 'APZelos/blamer.nvim'
 " Ranger File Manager
 Plug 'rbgrouleff/bclose.vim'
 Plug 'francoiscabrol/ranger.vim'
