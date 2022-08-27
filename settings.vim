@@ -1,6 +1,6 @@
 :set number
 :set mouse=a
-:set guifont=FiraCode\ Nerd\ Font:h13.5
+:set guifont=SauceCodePro\ Nerd\ Font\ Mono:h12.5
 :set encoding=UTF-8
 :set completeopt-=preview
 :colorscheme nightfox
