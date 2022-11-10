@@ -15,6 +15,7 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'markvincze/panda-vim'
 Plug 'EdenEast/nightfox.nvim'
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 Plug 'google/vim-maktaba'
 Plug 'bazelbuild/vim-bazel'
 Plug 'nvim-lua/plenary.nvim'

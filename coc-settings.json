@@ -40,6 +40,7 @@
   "java.configuration.runtimes": [
     { "name": "JavaSE-13", "path": "/Library/Java/JavaVirtualMachines/jdk-13.0.2.jdk/Contents/Home", "default": true }
   ],
-  "markdown-preview-enhanced.breakOnSingleNewLine": true
+  "markdown-preview-enhanced.breakOnSingleNewLine": true,
+  "svelte.enable-ts-plugin": true
 }
 
