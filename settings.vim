@@ -3,6 +3,9 @@
 :set guifont=SauceCodePro\ Nerd\ Font\ Mono:h12.5
 :set encoding=UTF-8
 :set completeopt-=preview
+
+:set background=dark
+:set t_Co=256
 :colorscheme tokyonight-night
 
 if match($TERM, "screen") != -1
@@ -13,7 +16,8 @@ else
   set termguicolors
 endif
 
-let g:enable_bold_font=1
+
+" let g:enable_bold_font=1
 let g:enable_italic_font=1
 
 " air-line
@@ -34,6 +38,11 @@ let g:airline_symbols.linenr = ''
 
 let g:netrw_list_hide= '.*\.swp$, *\.pyc, *\.DS_Store, *\node_modules\*, *\.git'
 let g:netrw_hide=1
+" Enable the list of buffers
+let g:airline#extensions#tabline#enabled = 1
+
+" Show just the filename
+let g:airline#extensions#tabline#fnamemod = ':t'
 
 " set autochdir
 
@@ -51,3 +60,15 @@ au FileType plantuml let g:plantuml_previewer#plantuml_jar_path = get(
 
 let g:NERDTreeHijackNetrw = 0
 let g:ranger_replace_netrw = 1
+
+" Buffers
+let g:BufSelectKeyOpen         = 'o'  " Open the buffer in the current window.
+let g:BufSelectKeySplit        = 's'  " Open the buffer in a new horzontal split.
+let g:BufSelectKeyVSplit       = 'v'  " Open the buffer in a new vertical split.
+let g:BufSelectKeyTab          = 't'  " Open the buffer in a new tab.
+let g:BufSelectKeyDeleteBuffer = 'x'  " Close the buffer using vim's bwipeout command.
+let g:BufSelectKeySort         = 'S'  " Change the sort order.
+let g:BufSelectKeyChDir        = 'cd' " Change working directory to match the buffer's
+let g:BufSelectKeyChDirUp      = '..' " Change working directory up one level from current
+let g:BufSelectKeySelectOpen   = '#'  " Move cursor to the next listed open buffer,
+let g:BufSelectKeyExit         = 'q'  " Exit the buffer list.

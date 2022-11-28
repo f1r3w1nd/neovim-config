@@ -11,11 +11,15 @@ Plug 'tc50cal/vim-terminal'
 Plug 'preservim/tagbar'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'mattn/emmet-vim'
+
+" Editor Themes
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'markvincze/panda-vim'
 Plug 'EdenEast/nightfox.nvim'
-Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+Plug 'folke/tokyonight.nvim'
+Plug 'sam4llis/nvim-tundra'
+
 Plug 'google/vim-maktaba'
 Plug 'bazelbuild/vim-bazel'
 Plug 'nvim-lua/plenary.nvim'
@@ -37,5 +41,8 @@ Plug 'tpope/vim-rhubarb'
 " Ranger File Manager
 Plug 'rbgrouleff/bclose.vim'
 Plug 'francoiscabrol/ranger.vim'
+
+" Buffers
+Plug 'PhilRunninger/bufselect'
 
 call plug#end()

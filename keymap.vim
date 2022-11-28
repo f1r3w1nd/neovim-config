@@ -111,3 +111,8 @@ function! OpenTerminal()
   resize 15
 endfunction
 nnoremap <c-t> :call OpenTerminal()<cr>
+
+" Buffers
+nnoremap <silent> <leader>b :ShowBufferList<CR>
+nmap ,d :b#<bar>bd#<CR>
+
