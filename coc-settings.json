@@ -3,10 +3,10 @@
   "prettier.requireConfig": true,
 
   // Tslint on save
-  "tslint.enable": true,
-  "tslint.autoFixOnSave": true,
-
-  "eslint.autoFixOnSave": true,
+  "eslint.enable": true,
+  "eslint.autoFixOnSave": false,
+  "eslint.alwaysShowStatus": true,
+  "eslint.run": ["onType"],
 
   // Run prettier (and others)
   "coc.preferences.formatOnSaveFiletypes": [
@@ -20,7 +20,8 @@
     "java",
     "scala",
     "yaml",
-    "json"
+    "json",
+    "svelte"
   ],
 
   "diagnostic.checkCurrentLine": true,
@@ -41,6 +42,13 @@
     { "name": "JavaSE-13", "path": "/Library/Java/JavaVirtualMachines/jdk-13.0.2.jdk/Contents/Home", "default": true }
   ],
   "markdown-preview-enhanced.breakOnSingleNewLine": true,
-  "svelte.enable-ts-plugin": true
+  "svelte.enable-ts-plugin": true,
+  "diagnostic-languageserver.filetypes": {
+    "markdown": [ "write-good", "markdownlint" ],
+    "sh": "shellcheck"
+  },
+  "diagnostic-languageserver.formatFiletypes": {
+    "sh": "shfmt"
+  }
 }
 

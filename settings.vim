@@ -3,10 +3,12 @@
 :set guifont=SauceCodePro\ Nerd\ Font\ Mono:h12.5
 :set encoding=UTF-8
 :set completeopt-=preview
-
-:set background=dark
+:set shell=bash
 :set t_Co=256
-:colorscheme tokyonight-night
+syntax enable
+:set background=dark
+
+:colorscheme everforest
 
 if match($TERM, "screen") != -1
   set term=xterm-256color
@@ -72,3 +74,7 @@ let g:BufSelectKeyChDir        = 'cd' " Change working directory to match the bu
 let g:BufSelectKeyChDirUp      = '..' " Change working directory up one level from current
 let g:BufSelectKeySelectOpen   = '#'  " Move cursor to the next listed open buffer,
 let g:BufSelectKeyExit         = 'q'  " Exit the buffer list.
+" Svelte
+let g:vim_svelte_plugin_use_typescript = 1
+let g:vim_svelte_plugin_use_less = 1
+let g:vim_svelte_plugin_use_sass = 1

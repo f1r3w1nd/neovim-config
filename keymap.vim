@@ -6,8 +6,8 @@ nmap <F8>: Vista!!<CR>
 nnoremap <leader>rr <cmd>RangerCurrentDirectory<cr>
 
 " Telescope
-nnoremap <leader>ff <cmd>Telescope find_files<cr>
-nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>ff <cmd>Telescope find_files hidden=true<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep hidden=true<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
@@ -59,6 +59,20 @@ nnoremap <silent> <leader>cl  :<C-u>CocList locationlist<CR>
 " manage extensions
 nnoremap <silent> <leader>cx  :<C-u>CocList extensions<cr>
 
+" allow to scroll in the preview
+set mouse=a
+
+" mappings
+nnoremap <silent> <space><space> :<C-u>CocFzfList<CR>
+nnoremap <silent> <space>a       :<C-u>CocFzfList diagnostics<CR>
+nnoremap <silent> <space>b       :<C-u>CocFzfList diagnostics --current-buf<CR>
+nnoremap <silent> <space>c       :<C-u>CocFzfList commands<CR>
+nnoremap <silent> <space>e       :<C-u>CocFzfList extensions<CR>
+nnoremap <silent> <space>l       :<C-u>CocFzfList location<CR>
+nnoremap <silent> <space>o       :<C-u>CocFzfList outline<CR>
+nnoremap <silent> <space>s       :<C-u>CocFzfList symbols<CR>
+nnoremap <silent> <space>p       :<C-u>CocFzfListResume<CR>
+
 " rename the current word in the cursor
 nmap <leader>cr  <Plug>(coc-rename)
 nmap <leader>cf  <Plug>(coc-format-selected)
@@ -103,15 +117,26 @@ nnoremap <leader>Y "+y$
 set splitright
 set splitbelow
 " turn terminal to normal mode with escape
-tnoremap <Esc> <C-\><C-n>
+tnoremap <leader><Esc> <C-\><C-n>
 " start terminal in insert mode
 au BufEnter * if &buftype == 'terminal' | :startinsert | endif
 function! OpenTerminal()
   split term://zsh
   resize 15
 endfunction
-nnoremap <c-t> :call OpenTerminal()<cr>
 
+
+function OpenTerminalVertical()
+  vsplit term://zsh
+endfunction
+
+function! OpenGitui()
+  vsplit term://gitui
+endfunction
+
+nnoremap <c-t> :call OpenTerminal()<cr>
+nnoremap <c-k> :call OpenTerminalVertical()<cr>
+nnoremap <c-g> :call OpenGitui()<cr>
 " Buffers
 nnoremap <silent> <leader>b :ShowBufferList<CR>
 nmap ,d :b#<bar>bd#<CR>

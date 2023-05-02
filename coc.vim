@@ -28,5 +28,6 @@ let g:coc_global_extensions = [
 	\ 'coc-jest',
 	\ 'coc-explorer',
   \ 'coc-webview',
-  \ 'coc-svelte'
+  \ 'coc-svelte',
+	\ 'coc-diagnostic'
 	\]
