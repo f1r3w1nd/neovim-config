@@ -16,6 +16,9 @@ Plug 'junegunn/fzf', {'dir': '~/.fzf','do': './install --all'}
 Plug 'junegunn/fzf.vim' " needed for previews
 Plug 'antoinemadec/coc-fzf', {'branch': 'release'}
 
+" Terraform
+Plug 'hashivim/vim-terraform'
+
 " Editor Themes
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'markvincze/panda-vim'

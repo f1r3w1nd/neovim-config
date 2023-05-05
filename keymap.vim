@@ -1,7 +1,3 @@
-" Tagbar 
-" nmap <F8> :TagbarToggle<CR>
-nmap <F8>: Vista!!<CR>
-
 " Ranger
 nnoremap <leader>rr <cmd>RangerCurrentDirectory<cr>
 
@@ -67,7 +63,7 @@ nnoremap <silent> <space><space> :<C-u>CocFzfList<CR>
 nnoremap <silent> <space>a       :<C-u>CocFzfList diagnostics<CR>
 nnoremap <silent> <space>b       :<C-u>CocFzfList diagnostics --current-buf<CR>
 nnoremap <silent> <space>c       :<C-u>CocFzfList commands<CR>
-nnoremap <silent> <space>e       :<C-u>CocFzfList extensions<CR>
+nnoremap <silent> <space>d       :<C-u>CocFzfList extensions<CR>
 nnoremap <silent> <space>l       :<C-u>CocFzfList location<CR>
 nnoremap <silent> <space>o       :<C-u>CocFzfList outline<CR>
 nnoremap <silent> <space>s       :<C-u>CocFzfList symbols<CR>
@@ -82,7 +78,7 @@ vmap <leader>cf  <Plug>(coc-format-selected)
 vmap <leader>ca  <Plug>(coc-codeaction-selected)
 nmap <leader>ca  <Plug>(coc-codeaction-selected)
 nmap <space>e :CocCommand explorer<CR>
-nmap <space>f :CocCommand explorer --preset floating<CR>
+nmap <space>f :CocCommand explorer --position floating --floating-position center<CR>
 
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 inoremap <silent><expr> <C-x><C-z> coc#pum#visible() ? coc#pum#stop() : "\<C-x>\<C-z>"
@@ -116,8 +112,10 @@ nnoremap <leader>Y "+y$
 " intgrated terminal
 set splitright
 set splitbelow
+
 " turn terminal to normal mode with escape
 tnoremap <leader><Esc> <C-\><C-n>
+
 " start terminal in insert mode
 au BufEnter * if &buftype == 'terminal' | :startinsert | endif
 function! OpenTerminal()
@@ -137,7 +135,12 @@ endfunction
 nnoremap <c-t> :call OpenTerminal()<cr>
 nnoremap <c-k> :call OpenTerminalVertical()<cr>
 nnoremap <c-g> :call OpenGitui()<cr>
-" Buffers
-nnoremap <silent> <leader>b :ShowBufferList<CR>
-nmap ,d :b#<bar>bd#<CR>
 
+" Buffers
+nmap ,d :%bd\|e#<CR>
+
+" Terraform
+nnoremap <leader>ti, :call terraform init<CR>
+nnoremap <leader>tv, :call terraform validate<CR>
+nnoremap <leader>tp, :call terraform plan<CR>
+nnoremap <leader>taa, :call terraform apply -auto-approve<CR>

@@ -29,5 +29,7 @@ let g:coc_global_extensions = [
 	\ 'coc-explorer',
   \ 'coc-webview',
   \ 'coc-svelte',
-	\ 'coc-diagnostic'
+	\ 'coc-diagnostic',
+	\ 'coc-xml',
+	\ 'coc-jira-complete'
 	\]

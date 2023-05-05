@@ -10,3 +10,4 @@ source ~/.config/nvim/coc.vim
 source ~/.config/nvim/signify.vim
 source ~/.config/nvim/telescope.vim
 source ~/.config/nvim/octo.vim
+source ~/.config/nvim/terraform.vim

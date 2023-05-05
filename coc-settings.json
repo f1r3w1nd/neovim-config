@@ -27,17 +27,31 @@
   "diagnostic.checkCurrentLine": true,
 
   "explorer.width": 30,
-  "explorer.icon.enableNerdfont": true,
-  "explorer.previewAction.onHover": false,
   "explorer.keyMappings": {
     "<cr>": ["expandable?", "expand", "open"],
-    "v": "open:vsplit"
+    "v": "open:vsplit",
+    "s": "open:split",
+    "mm": "rename",
+    "mc": "copyFile",
+    "C": "copyFile",
+    "md": "delete",
+    "D": "delete",
+    "ma": "addFile",
+    "mA": "addDirectory"
   },
     "explorer.file.hiddenRules": {
 		"filenames": ["node_modules", ".git", ".DS_STORE"]
   },
   "explorer.file.showHiddenFiles": false,
+  "explorer.file.reveal.whenOpen": false,
+  "explorer.previewAction.onHover": false,
+  "explorer.icon.enableNerdfont": true,
+  "explorer.icon.source": "vim-devicons",
 
+  "explorer.file.child.template": "[git | 2] [selection | clip | 1] [indent][icon | 1] [diagnosticError & 1][filename omitCenter 1][modified][readonly] [linkIcon & 1][link growRight 1 omitCenter 5]",
+  "explorer.buffer.root.template": "[icon & 1] OPEN EDITORS",
+  "explorer.file.root.template": "[icon & 1] PROJECT ([root])",
+  
   "java.configuration.runtimes": [
     { "name": "JavaSE-13", "path": "/Library/Java/JavaVirtualMachines/jdk-13.0.2.jdk/Contents/Home", "default": true }
   ],
@@ -49,6 +63,10 @@
   },
   "diagnostic-languageserver.formatFiletypes": {
     "sh": "shfmt"
-  }
+  },
+
+  "jira.workspaceUrl": "https://os-runway.atlassian.net",
+  "jira.user.email": "vkoukoulommatis@open-systems.com",
+  "jira.user.apiKey": "ATATT3xFfGF0J-oQxPSk7qkmW2LUj7xtJt1WTXvYI7VgUkbu4dS-oJydww-BuE72gVQKzk7ApQmE8O1B6sOYlWPITtZgmySW8u7xJ9CPdUZDeyGyfjrDSLcAg89gVv9Dw3ZzF-d7UdU1lPGep0nJII6uWcly1V_W8cM-Zd3i8hdixx_xGiL5EkY=5585DAE1"
 }
 
