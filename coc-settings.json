@@ -65,8 +65,8 @@
     "sh": "shfmt"
   },
 
-  "jira.workspaceUrl": "https://os-runway.atlassian.net",
-  "jira.user.email": "vkoukoulommatis@open-systems.com",
-  "jira.user.apiKey": "ATATT3xFfGF0J-oQxPSk7qkmW2LUj7xtJt1WTXvYI7VgUkbu4dS-oJydww-BuE72gVQKzk7ApQmE8O1B6sOYlWPITtZgmySW8u7xJ9CPdUZDeyGyfjrDSLcAg89gVv9Dw3ZzF-d7UdU1lPGep0nJII6uWcly1V_W8cM-Zd3i8hdixx_xGiL5EkY=5585DAE1"
+  "jira.workspaceUrl": "",
+  "jira.user.email": "",
+  "jira.user.apiKey": ""
 }
 
